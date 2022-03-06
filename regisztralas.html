@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu-HU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <script src="showpassworld.js"></script>
+    <title>Kezdőlap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://hu.allfont.net/allfont.css?fonts=autobahn" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <header class="milliomos">
+            <h1>Legyen ön is milliomos</h1>
+        </header>
+        <div class="col-sm-2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Kezdőlap</a>
+                    </li>
+                    <li>
+                        <a href="bejelentkezes.html">Bejelentkezés</a>
+                    </li>
+                    <li>
+                        <a href="regisztralas.html">Regisztráció</a>
+                    </li>
+                    <li>
+                        <a href="jatek.html">Játék</a>
+                    </li>
+                    <li>
+                        <a href="highscore.html">Highscore</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="kijelentkeztel()">Kijelentkezés</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-sm-10">
+            <article>
+                <form action="/action_page.php" class="was-validated">
+                    <div class="mb-3 mt-3">
+                        <label for="uname" class="form-label">Felhasználónév:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="MILLIOMOS2020" name="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="text" class="form-control" id="email" placeholder="MILLIOMOS@MILLIOMOS.HU" name="uname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Jelszó:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <input type="checkbox" onclick="pontbolszoveg()">Show Password
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Jelszó megerősítése:</label>
+                        <input type="password" class="form-control" id="pwdpwd" placeholder="Enter password" name="pswd" required>
+                        <input type="checkbox" onclick="pontbolszoveg2()">Show Password
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="bejelentkezes()">Bejelentkezés</button>
+                    <button type="regisztracio" class="btn btn-primary" id="regisztralas"> <a href="bejelentkezes.html">Már regisztráltál? - Bejelentkezés</a>  </button>
+                </form>
+            </article>
+        </div>
+        <div class="col-sm-12">
+            <footer>
+                <p>Minden jog fenntartva. Készítette: Szedlár Krisztina</p>
+            </footer>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

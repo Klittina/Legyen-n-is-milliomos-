@@ -1,0 +1,247 @@
+@import url(https://hu.allfont.net/allfont.css?fonts=autobahn);
+body {
+    background-image: url(kepek/hatter.jpg);
+}
+
+:root {
+    --alapszin: #ffffff;
+    --szürke: #6a6a6a;
+    --piros: #ff6565;
+    --szürkegomb: #828294;
+    --toplista: #5a5270;
+    --regisztracio: #454479;
+    --menufooter: 'Chakra Petch', sans-serif;
+    --milliomos: 'Chakra Petch', sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.milliomos h1 {
+    text-align: center;
+    color: var(--alapszin);
+    font-family: var(--milliomos);
+    font-size: 50pt;
+}
+
+.col-sm-10 h2 {
+    color: var(--alapszin);
+    font-family: 'Dax Compact Pro';
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+.col-sm-10 p {
+    color: var(--alapszin);
+    font-family: 'Dax Compact Pro';
+    font-size: 11pt;
+    text-align: justify;
+}
+
+.col-sm-10 h1 {
+    color: var(--alapszin);
+    font-size: 26pt;
+}
+
+.col-sm-12 {
+    text-align: center;
+    color: var(--szürke);
+    font-family: var(--menufooter);
+}
+
+nav ul {
+    font-family: 'Autobahn', arial;
+    position: fixed;
+    padding-left: 0pt;
+    padding-top: 10%;
+    color: var(--alapszin);
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: var(--menufooter);
+    color: var(--alapszin);
+    font-size: 17pt;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Autobahn', arial;
+}
+
+
+/* bejelentkezés css*/
+
+input[type="password"] {
+    font-family: Verdana;
+    letter-spacing: 0.125em;
+}
+
+.regisztracio {
+    width: 50%;
+    border-radius: 15px;
+    color: var(--alapszin);
+    background-color: var(--toplista);
+    margin: 20px;
+    height: 40px;
+}
+
+.regisztralas a {
+    text-decoration: none;
+}
+
+.btn btn-primary {
+    width: 100%;
+}
+
+.form-control {
+    background-color: var(--toplista);
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+
+.form-label {
+    color: var(--alapszin);
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+}
+
+.bejelentkezes {
+    width: 50%;
+    border-radius: 15px;
+    color: var(--alapszin);
+    background-color: var(--regisztracio);
+    margin: 20px;
+    height: 40px;
+}
+
+
+/*highscore table*/
+
+#content {
+    font-weight: normal;
+    width: 700px;
+    margin: 0px auto;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12pt;
+    color: var(--alapszin);
+    border: 3px black solid;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+th {
+    text-align: left;
+    color: var(--toplista);
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 100px;
+}
+
+tr {
+    border-collapse: collapse;
+    height: 50px;
+    background-color: var(--toplista);
+    border-spacing: 15em;
+}
+
+td {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    margin-left: 0pt;
+    text-align: center;
+    border-top: solid 1px black;
+    border-bottom: solid 2px black;
+    border-image: url(./borders/bottom.jpg);
+    width: 100%;
+}
+
+td.spacer {
+    padding-right: 20px;
+}
+
+td.roundleft {
+    border-left: 1px solid;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    /* Firefox top left corner */
+    -moz-border-radius-bottomleft: 15px;
+    /* Firefox bottom left corner */
+    width: 33.3333%;
+}
+
+td.roundright {
+    -moz-border-radius-topright: 15px;
+    /* Firefox top right corner */
+    -moz-border-radius-bottomright: 15px;
+    /* Firefox bottom right corner */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: 2px solid;
+    width: 33.3333%;
+}
+
+
+/*jatek.html*/
+
+.valaszok {
+    background-color: var(--szürkegomb);
+    color: var(--alapszin);
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.szurke {
+    color: var(--szürke);
+    font-family: var(--menufooter);
+    font-size: 20px;
+}
+
+.piros {
+    color: var(--piros);
+    font-family: var(--menufooter);
+    font-size: 20px;
+}
+
+.feher {
+    color: var(--alapszin);
+    font-family: var(--menufooter);
+    font-size: 20px;
+}
+
+.nyer {
+    color: var(--alapszin);
+    font-family: var(--menufooter);
+    font-size: 20px;
+}
+
+.kerdes {
+    color: var(--alapszin);
+    text-align: center;
+}
+
+.cerkomajom {
+    color: var(--alapszin);
+    text-align: center;
+}
